@@ -1,0 +1,110 @@
+:root {
+    --main: #B93160;
+    --main: #1a1a1a;
+    --fg: #C8B6E2;
+    --selected: #d75281;
+    --selected: #242424;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main);
+    text-transform: uppercase;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+}
+
+.title {
+    color: var(--fg);
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.game-text {
+    font-size: 27px;
+    color: var(--fg);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: -30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.board {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.button {
+    border: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    font-family: "Finger Paint", cursive;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.winning-button {
+    background-color: var(--selected);
+    cursor: auto;
+}
+.winning-button > span {
+    text-shadow: 0 0 0.8em var(--fg);
+}
+
+.button-text {
+    font-size: 80px;
+    margin-top: 30px;
+    color: var(--fg);
+}
+
+.b1, .b2, .b4, .b5, .b7, .b8 {
+    border-right: 3px solid var(--fg);
+}
+
+.b1, .b2, .b3, .b4, .b5, .b6 {
+    border-bottom: 3px ridge var(--fg);
+}
+
+form {
+    margin-top: 30px;
+}
+
+.reset-button {
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: var(--fg);
+    color: var(--main);
+    margin: auto;
+    max-width: 150px;
+    cursor: pointer;
+    box-shadow: 0 0 0.2em 0 var(--main);
+}
+
+.reset-button:hover {
+    box-shadow: 0 0 0.4em 0 var(--fg);
+}
+
